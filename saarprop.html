@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>SAAR</title>
+  <title>SAAR-PROPERTIES</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <style>
     html {
   scroll-behavior: smooth;
@@ -17,8 +18,8 @@
   left:0;
   width:100%;
   background-color: white;
-  box-shadow: 0px 2px #888888;
-
+  box-shadow: 0px 3px #888888;
+z-index: 1
 }
 
 
@@ -47,7 +48,7 @@
   background-color: white;
   color: #07151f;
   border-radius: 10px;
-  
+  padding: 5px;
 }
 .intro h1{
 	font-size: 50px;
@@ -55,6 +56,7 @@
  @media screen and (max-width: 650px) {
  	.intro h1{
 	font-size: 35px;
+  padding: 5px;
 }
   .intro{
     padding-top: 5px;
@@ -70,6 +72,7 @@ img {vertical-align: middle;}
   max-width: 900px;
   position: relative;
   margin: auto;
+  z-index: -1;
 }
 
 
@@ -157,6 +160,7 @@ img {vertical-align: middle;}
   text-align: center;
   background-color: #d3e8e4;
   color: black;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -228,9 +232,6 @@ img {vertical-align: middle;}
   }
 
 }
-
-
-
 
 
 
@@ -319,12 +320,127 @@ li{
     height: 350px;
   }
 }
-  </style>
+ 
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+/* Style the container/contact section */
+.container9 {
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  }
+.row9{
+  background-color: #d3e8e4;
+}
+/* Create two columns that float next to eachother */
+.column9 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row9:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container10 {
+  position: relative;
+
+}
+.markimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.button1 {
+  width: 33.3%;
+  background-color: #07151f;
+  color: white;
+  text-align: center;
+  
+  transition: all 0.5s;
+  margin: 5px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column9, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.button6 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #d3e8e4;
+  background-color: #07151f;
+  text-align: center;
+  cursor: pointer;
+  width: 33.3%;
+  text-decoration: none;
+
+}
+@media screen and (max-width: 600px) {
+.button6{
+  font-size: 14px;
+}
+}
+
+</style>
 </head>
 <body>
 <section>
 <div class="icon">
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
 </section>
 <div id="myNav" class="overlay">
@@ -512,6 +628,7 @@ li{
 </div>
 
 
+
 <section>
   <h1></h1>
 </section>
@@ -524,11 +641,44 @@ li{
 
 
 
+<section>
+  <h1></h1>
+</section>
 
 
-<div class="exsheet">
-<iframe width="100%" height="500" frameborder="0" scrolling="no"class="sheet" src="https://onedrive.live.com/embed?resid=260B12898C96A24%217317&authkey=%21AAqdD-nxEcyxCao&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+<div class="container9">
+  <div style="text-align:center">
+    <h1>Book a Meeting</h1>
+    <p>Swing by to have a look at the beautiful porperty we have established</p>
+  </div>
+  <div class="row9">
+    <div class="column9">
+      <div class="container10">
+      <img src="mark.jpg" style="width:100%" class="markimage">
+      <h2>SAAR PROPERTIES Marketing Office</h2>
+    <p>Plot No: 8, ETA Globevill, Bangalore High Road, Sriperumbudur, Tamil Nadu 602105</p>
+    <p><a href="https://www.google.com/maps/dir/12.9430376,79.908075/SAAR+PROPERTIES,+Plot+No:+8,+Bangalore+High+Road,+opp.+to+Sumathi+Theatres,+Sriperumbudur,+Tamil+Nadu+602105/@12.9374933,79.8888871,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a52edb45920e55f:0x7303dab8a169300a!2m2!1d79.9074942!2d12.934128" target="_blank" class="button6">Directions&emsp;<i class='fas fa-arrows-alt'></i></a></p>
+  </div>
+  </div>
+
+    <div class="column9">
+      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+          action="https://script.google.com/macros/s/AKfycbzdqecFSzrpz7JmZe3pAnQ-VXdLlKUKU__8nIfdjOUohJEYVcdlXkv2/exec">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name..">
+        <label for="lname">Email Id</label>
+        <input type="text" id="fname" name="email" placeholder="Your emailid..">
+        <label for="fname">Phone No</label>
+        <input type="text" id="fname" name="phone" placeholder="Your phoneno..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write your subject.." style="height:170px"></textarea>
+        <button class="button1"><span>Submit</span></button>
+      </form>
+    </div>
+  </div>
 </div>
+
+
 
 <script>
 function openNav() {
