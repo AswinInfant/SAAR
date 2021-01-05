@@ -22,7 +22,9 @@
 z-index: 1
 }
 
-
+.ham{
+  float: right;
+}
   body
   {
     background-color: white;
@@ -241,11 +243,11 @@ img {vertical-align: middle;}
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
+  float: right;
 }
 
 .overlay-content {
@@ -253,7 +255,7 @@ img {vertical-align: middle;}
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 20px;float: right;
 }
 .overlay .closebtn {
   position: absolute;
@@ -440,7 +442,8 @@ input[type=text], select, textarea {
 <body>
 <section>
 <div class="icon">
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<span class="ham" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<img src="logo2.png" class="logo" style="width:100px">
 </div>
 </section>
 <div id="myNav" class="overlay">
@@ -453,6 +456,8 @@ input[type=text], select, textarea {
     <a href="#contact" onclick="closeNav()">Contact Us</a>
   </div>
 </div>
+<section><br></section>
+
 
 <div class="intro" id ="home">
 
@@ -502,8 +507,8 @@ input[type=text], select, textarea {
 
 
 <div class="about-section" id ="abt">
-  <h1>About Us Page</h1>
-  <p>Some text about who we are and what we do.</p>
+  <h1>About Us</h1>
+  <p>SAAR Properties is DTCP Approved plots and comes with a number of facilities and amenities.</p>
   <p>Resize the browser window to see that this page is responsive by the way.</p>
 </div>
 <section>
@@ -657,7 +662,7 @@ input[type=text], select, textarea {
       <img src="mark.jpg" style="width:100%" class="markimage">
       <h2>SAAR PROPERTIES Marketing Office</h2>
     <p>Plot No: 8, ETA Globevill, Bangalore High Road, Sriperumbudur, Tamil Nadu 602105</p>
-    <p><a href="https://www.google.com/maps/dir/12.9430376,79.908075/SAAR+PROPERTIES,+Plot+No:+8,+Bangalore+High+Road,+opp.+to+Sumathi+Theatres,+Sriperumbudur,+Tamil+Nadu+602105/@12.9374933,79.8888871,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a52edb45920e55f:0x7303dab8a169300a!2m2!1d79.9074942!2d12.934128" target="_blank" class="button6">Directions&emsp;<i class='fas fa-arrows-alt'></i></a></p>
+    <p><a href="https://www.google.com/maps/place/SAAR+PROPERTIES/@12.9374933,79.8888871,14z/data=!4m19!1m13!4m12!1m4!2m2!1d79.908075!2d12.9430376!4e1!1m6!1m2!1s0x3a52edb45920e55f:0x7303dab8a169300a!2sSAAR+PROPERTIES,+Plot+No:+8,+Bangalore+High+Road,+opp.+to+Sumathi+Theatres,+Sriperumbudur,+Tamil+Nadu+602105!2m2!1d79.9074942!2d12.934128!3m4!1s0x3a52edb45920e55f:0x7303dab8a169300a!8m2!3d12.934128!4d79.9074942" target="_blank" class="button6">Directions&emsp;<i class='fas fa-arrows-alt'></i></a></p>
   </div>
   </div>
 
