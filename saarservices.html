@@ -289,7 +289,9 @@ img {vertical-align: middle;}
 
 
 
-
+.ham{
+  float: right;
+}
 
 
 
@@ -300,9 +302,9 @@ img {vertical-align: middle;}
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  right: 0;
+  background-color:black;
+  
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -470,7 +472,7 @@ input[type=text], select, textarea {
 <body>
 <section>
 <div class="icon">
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<span class="ham" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
 </section>
 <div id="myNav" class="overlay">
